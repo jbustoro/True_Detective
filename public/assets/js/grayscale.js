@@ -41,3 +41,21 @@
 
 })(jQuery); // End of use strict
 
+//Play video in viewport
+$(document).ready(function() {
+    var inner = $(".video-container");
+    var elementPosTop = inner.position().top;
+    var viewportHeight = $(window).height();
+    var video = document.getElementsByTagName("video")[0];
+    $(window).on('scroll', function() {
+        var scrollPos = $(window).scrollTop();
+        var elementFromTop = elementPosTop - scrollPos;
+
+        if (elementFromTop > 0 && elementFromTop < elementPosTop + viewportHeight) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    });
+});
+

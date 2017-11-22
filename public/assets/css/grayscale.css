@@ -179,14 +179,14 @@ footer {
 body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
 
-.videoWrapper {
+.video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
     height: 0;
 }
 
-.videoWrapper video {
+.video-container video {
     position: absolute;
     top: 0;
     left: 0;

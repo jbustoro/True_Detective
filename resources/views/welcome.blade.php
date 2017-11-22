@@ -74,7 +74,7 @@
     </section>
     <!-- Trailer Section -->
     <section id="trailer">
-        <div class="videoWrapper">
+        <div class="video-container">
             <!--<iframe width="560" height="349" src="https://www.youtube.com/embed/fVQUcaO4AvE?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>-->
             <video controls>
                 <source src="assets/video/True_Detective-S01_Trailer.mp4" type="video/mp4"/>
