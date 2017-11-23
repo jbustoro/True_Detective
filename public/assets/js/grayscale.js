@@ -41,21 +41,22 @@
 
 })(jQuery); // End of use strict
 
-//Play video in viewport
+//Play video when section is active
 $(document).ready(function() {
-    var inner = $(".video-container");
-    var elementPosTop = inner.position().top;
-    var viewportHeight = $(window).height();
-    var video = document.getElementsByTagName("video")[0];
     $(window).on('scroll', function() {
-        var scrollPos = $(window).scrollTop();
-        var elementFromTop = elementPosTop - scrollPos;
-
-        if (elementFromTop > 0 && elementFromTop < elementPosTop + viewportHeight) {
+        var trailerLink = document.getElementById("trailer-link");
+        var video = document.getElementById("trailer-video");
+        console.log(trailerLink.className);
+        if (trailerLink.className.indexOf("active") !== -1){
             video.play();
-        } else {
+        }
+        else {
             video.pause();
         }
     });
 });
+
+
+
+
 

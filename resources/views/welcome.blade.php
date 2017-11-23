@@ -38,7 +38,7 @@
                         <a class="nav-link js-scroll-trigger" href="#sypnosis">Sypnosis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#trailer">Trailer</a>
+                        <a id="trailer-link" class="nav-link js-scroll-trigger" href="#trailer">Trailer</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#signUp">Sign Up</a>
@@ -76,7 +76,7 @@
     <section id="trailer">
         <div class="video-container">
             <!--<iframe width="560" height="349" src="https://www.youtube.com/embed/fVQUcaO4AvE?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>-->
-            <video controls>
+            <video id="trailer-video" controls>
                 <source src="assets/video/True_Detective-S01_Trailer.mp4" type="video/mp4"/>
             </video>
         </div>

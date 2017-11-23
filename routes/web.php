@@ -20,10 +20,10 @@ Route::post('signUp', function ()
     $listId = 'a45c3fc3c6';
     $email = request()->input('email');
 
-    if(Mailchimp::check($listId, $email))
+    /*if(Mailchimp::check($listId, $email))
     {
         return "El email {$email} ya ha sido registrado";
-    };
+    };*/
 
     Mailchimp::subscribe(
         $listId,
@@ -32,5 +32,5 @@ Route::post('signUp', function ()
         true //confirm
     );
 
-    return '¡Listo!';
+    //return '¡Listo!';
 });
