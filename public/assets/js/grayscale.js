@@ -41,7 +41,7 @@
 
 })(jQuery); // End of use strict
 
-//Play video when section is active
+// Play video when section is active
 $(document).ready(function() {
     $(window).on('scroll', function() {
         if ($("#trailer-link").attr('class').indexOf("active") !== -1){

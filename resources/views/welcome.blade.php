@@ -19,8 +19,6 @@
     <link href="assets/css/grayscale.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="assets/img/carcosa.png" type="image/png">
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body id="page-top">
@@ -29,7 +27,6 @@
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
                 <i class="fa fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -75,7 +72,6 @@
     <!-- Trailer Section -->
     <section id="trailer">
         <div class="video-container">
-            <!--<iframe width="560" height="349" src="https://www.youtube.com/embed/fVQUcaO4AvE?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>-->
             <video id="trailer-video" controls>
                 <source src="assets/video/True_Detective-S01_Trailer.mp4" type="video/mp4"/>
             </video>
@@ -91,7 +87,7 @@
                         <form method="POST" action="signUp" class="form-inline">
                             {!! csrf_field() !!}
                             <input class="form-control" type="email" name="email" placeholder="Email Address">
-                            <button class="btn btn-basic" type="submit">Submit</button>
+                            <button class="btn" type="reset">Submit</button>
                         </form>
                     </div>
                 </div>
