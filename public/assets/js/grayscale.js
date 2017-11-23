@@ -44,14 +44,10 @@
 //Play video when section is active
 $(document).ready(function() {
     $(window).on('scroll', function() {
-        var trailerLink = document.getElementById("trailer-link");
-        var video = document.getElementById("trailer-video");
-        console.log(trailerLink.className);
-        if (trailerLink.className.indexOf("active") !== -1){
-            video.play();
-        }
-        else {
-            video.pause();
+        if ($("#trailer-link").attr('class').indexOf("active") !== -1){
+            $('#trailer-video').get(0).play()
+        } else {
+            $('#trailer-video').get(0).pause()
         }
     });
 });
